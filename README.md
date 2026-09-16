@@ -36,3 +36,14 @@ npx expo export --platform web --output-dir /tmp/img3d-web-export
 ## ملاحظة هندسية
 
 توليد DXF الحالي يصدّر شبكة relief بصيغة 3DFACE. جودة النتيجة مرتبطة بجودة الصورة والإضاءة، ويمكن رفع الدقة من `buildHeightMap` عند استهداف أجهزة ذات ذاكرة أعلى. تم اختيار المعالجة المحلية لتجنب إرسال صور المستخدمين إلى خدمة خارجية ولتقديم تجربة مستقلة على Android.
+
+## Android Native
+
+يوجد الآن مشروع Android Native مستقل داخل `android-native/` مكتوب بلغة Kotlin وJetpack Compose. هذه النسخة هي المسار الموصى به لبناء APK/AAB حقيقي من Android Studio، وتضم معالجة Bitmap محلية، التقاط الكاميرا، اختيار الصور، معاينة Compose، وتصدير DXF عبر FileProvider.
+
+```bash
+cd android-native
+./gradlew assembleDebug
+```
+
+افتح مجلد `android-native` في Android Studio إذا لم يكن Android SDK متاحًا في بيئة التشغيل الحالية.

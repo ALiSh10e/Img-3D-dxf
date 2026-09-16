@@ -7,6 +7,9 @@ plugins {
 android { namespace = "com.alish10e.img3ddxf"; compileSdk = 35
     defaultConfig { applicationId = "com.alish10e.img3ddxf"; minSdk = 26; targetSdk = 35; versionCode = 1; versionName = "1.0" }
     buildFeatures { compose = true; buildConfig = true }
+    buildTypes {
+        getByName("release") { isMinifyEnabled = false; isShrinkResources = false; proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro") }
+    }
     packaging { resources.excludes += "/META-INF/{AL2.0,LGPL2.1}" }
 }
 

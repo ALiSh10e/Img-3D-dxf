@@ -21,10 +21,14 @@ cd android-native
 ./gradlew assembleDebug
 ```
 
-سيكون الناتج في:
+سيحصل الناتج في:
 
 ```text
 app/build/outputs/apk/debug/app-debug.apk
 ```
+
+## البناء التلقائي
+
+ملف `.github/workflows/android-build.yml` يبني تلقائيًا `app-debug.apk` و`app-release.aab` عند الدفع إلى فرع `main`، ويرفعهما في GitHub Actions كـ Artifacts. ملف AAB الناتج غير موقّع بمفتاح Google Play؛ قبل النشر النهائي يجب ربط Keystore آمن داخل إعدادات المستودع.
 
 افتح مجلد `android-native` مباشرة في Android Studio ثم شغّل التطبيق على جهاز Android أو محاكي.

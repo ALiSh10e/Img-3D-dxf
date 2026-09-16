@@ -42,7 +42,7 @@ fun NativeStudioScreen(bitmap: Bitmap?, map: HeightMap?, settings: ReliefSetting
                 }
                 ReliefPreview(bitmap, map, settings)
                 Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(10.dp)) {
-                    Button(onClick = onPick, modifier = Modifier.weight(1f).height(52.dp), colors = ButtonDefaults.buttonColors(containerColor = Mint, contentColor = Ink), shape = RoundedCornerShape(13.dp)) { Text("اختيار صورة", fontWeight = FontWeight.Bold) }
+                    Button(onClick = onPick, modifier = Modifier.weight(1f).height(52.dp), colors = ButtonDefaults.buttonColors(containerColor = Mint, contentColor = Ink), shape = RoundedCornerShape(13.dp)) { Text("استيراد الصورة", fontWeight = FontWeight.Bold) }
                     OutlinedButton(onClick = onCamera, modifier = Modifier.weight(.72f).height(52.dp), colors = ButtonDefaults.outlinedButtonColors(contentColor = TextMain), border = androidx.compose.foundation.BorderStroke(1.dp, Color(0xFF26485A)), shape = RoundedCornerShape(13.dp)) { Text("الكاميرا", fontWeight = FontWeight.Bold) }
                 }
                 Controls(settings, onSettings)

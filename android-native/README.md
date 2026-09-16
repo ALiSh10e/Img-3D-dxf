@@ -5,7 +5,7 @@
 ## المزايا الأصلية
 
 - واجهة Android أصلية بملف `MainActivity.kt` وJetpack Compose.
-- اختيار الصور عبر Android Storage Access Framework.
+- استيراد الصور عبر Android Storage Access Framework باستخدام `ACTION_OPEN_DOCUMENT` مع دعم JPG وPNG وWebP وحفظ صلاحية القراءة.
 - التقاط الصور عبر Android Camera Activity مع طلب إذن وقت التشغيل.
 - معالجة `Bitmap` محليًا: luminance، contrast shaping، gradient edge energy، وsmoothing.
 - معاينة isometric لخريطة الارتفاعات باستخدام Compose Canvas.

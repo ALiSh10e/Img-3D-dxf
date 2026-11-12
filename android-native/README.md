@@ -1,6 +1,6 @@
 # Image to 3D Extrusion — Android Native
 
-هذا المجلد هو النسخة الأصلية لتطبيق Android مكتوبة بلغة **Kotlin** باستخدام **Jetpack Compose**، مستقلة عن نسخة Expo السابقة.
+هذا المجلد هو النسخة الأصلية لتطبيق Android Studio 1.1.0 مكتوبة بلغة **Kotlin** باستخدام **Jetpack Compose**، مستقلة عن نسخة Expo السابقة.
 
 ## المزايا الأصلية
 
@@ -10,6 +10,10 @@
 - معالجة `Bitmap` محليًا: luminance، contrast shaping، gradient edge energy، وsmoothing.
 - معاينة isometric لخريطة الارتفاعات باستخدام Compose Canvas.
 - إنشاء DXF حقيقي بكيانات `3DFACE` ومشاركته عبر Android `FileProvider`.
+- إنشاء OBJ حقيقي بشبكة vertices/faces متوافق مع Blender وMeshLab.
+- معالجة الصور خارج خيط الواجهة مع معاينة حالات الانتظار والأخطاء.
+- واجهة إنتاج RTL بمراحل واضحة: مصدر الصورة، التحليل، ثم التصدير.
+- ثلاث وصفات جاهزة للعمق، مع تحكم يدوي في العمق والتباين وتفاصيل الحواف.
 - عدم رفع الصور إلى أي خدمة خارجية.
 
 ## البناء
